@@ -1,0 +1,18 @@
+.dark > body {
+    background-color: #121212;
+}
+
+.dark > body::before {
+    opacity: 0.03;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url(/assets/images/noise.png);
+    background-size: 182px;
+    background-repeat: repeat;
+    opacity: 0.08;
+    z-index: -1;
+}
