@@ -55,9 +55,9 @@
         </div>
     </header>
     <transition name="fade">
-        <div class="overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 flex flex-col  justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full backdrop-blur-sm md:hidden"
+        <div class="overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 flex flex-col  justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full backdrop-blur-md md:hidden"
             v-show="isOpenLinkMenu">
-            <ul class="p-3 w-full flex flex-col gap-2 border dark:border-neutral-800 rounded-md max-w-80 max-h-full dark:bg-[#161617]/70 bg-white/90 links shadow-md">
+            <ul class="p-3 w-full flex flex-col gap-2 border dark:border-neutral-800 rounded-lg max-w-80 max-h-full dark:bg-black bg-white/90 links shadow-md">
                 <li v-for="(link, index) in links" :key="index" class="w-full">
                     <RouterLink :to="{ name: link.route }"
                         class="dark:text-neutral-400 dark:hover:text-neutral-100 px-3 py-2.5 dark:hover:bg-white/10 rounded-md group capitalize text-neutral-700 hover:text-black hover:bg-black/10 w-full flex items-center justify-between">
