@@ -1,14 +1,16 @@
 <template>
-    <h1>Layout template</h1>
-    <slot />
+    <Navbar />
+    <section>
+        <slot />
+    </section>
 </template>
 
 <script setup >
-const isDark = ref(true)
+const themeStore = useThemeStore()
 
 useHead(() => ({
   htmlAttrs: {
-    class: isDark.value ? 'dark' : '',
+    class: themeStore.getTheme().is_dark ? 'dark' : '',
   },
 }))
 </script>
