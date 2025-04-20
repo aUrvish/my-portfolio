@@ -1,3 +1,7 @@
 <template>
-    <h1 class="text-red-500">Hello would</h1>
+    <section class="px-3">
+        <div class="max-w-screen-lg mx-auto">
+            <HomeHero />
+        </div>
+    </section>
 </template>

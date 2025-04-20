@@ -1,0 +1,71 @@
+<template>
+    <div class="md:py-20 py-8 flex md:flex-row flex-col justify-center md:items-start items-center md:gap-12 gap-6">
+        <div class="md:max-w-[280px] max-w-[180px] relative">
+            <img src="../../assets/images/me.jpg"
+                class="w-full aspect-square rounded-3xl border-2 p-1 dark:border-neutral-800"
+                alt="Urvish Mandaliya" />
+            <p
+                class="absolute right-0 bottom-0 md:text-2xl text-xl p-2 dark:bg-black/90 bg-white/90 rounded-full translate-x-1/4 translate-y-1/4 dark:border-neutral-800 border-2">👋</p>
+        </div>
+        <div class="max-w-xl">
+            <!-- <h1>Hero component</h1> -->
+            <p class="capitalize dark:text-neutral-400 text-neutral-700 py-1.5 rounded-md md:px-4 px-2.5 border w-fit font-semibold dark:border-neutral-800 md:text-base text-sm"
+                ><span ref="typedText"></span></p>
+            <p class="dark:text-white mt-2 font-black md:text-[34px] text-[22px]">Hey, I'm Urvish Mandaliya</p>
+            <div class="w-24 bg-blue-200 dark:bg-blue-200/10 h-1 rounded-md overflow-hidden" >
+                <div class="h-full w-1/3 bg-blue-500 rounded-md loading-bar" ></div>
+            </div>
+            <p class="dark:text-neutral-400 md:text-base text-sm mt-4">
+                🚀 I'm a passionate Full Stack Web Developer with 2 years of experience in building dynamic and scalable web apps using Vue.js ⚙️ and Laravel 🛠️. I craft clean, responsive UIs and develop robust backends 💡. I love solving real-world problems with code and constantly strive to improve and grow my skills 📈.
+            </p>
+
+            <div class="mt-6 flex items-center md:gap-4 gap-2">
+                <button
+                class="md:py-[5px] py-1 flex items-center gap-2 px-3 cursor-pointer rounded-md bg-blue-500 hover:bg-blue-600 text-neutral-100 border-2 border-blue-500 hover:border-blue-600">
+                    <Users class="md:w-[18px] w-4" />
+                    <p class="capitalize md:text-base text-[12px]">Contact me</p>
+                </button>
+                <button
+                class="md:py-[5px] py-1 flex items-center gap-2 px-3 cursor-pointer rounded-md border-2 border-blue-500 text-blue-500">
+                    <ArrowDownToLine class="md:w-[18px] w-4" />
+                    <p class="capitalize md:text-base text-[12px]">Download Resume</p>
+                </button>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script setup>
+import Typed from 'typed.js';
+
+const typedText = ref(null)
+
+const handleTypeAnimation = () => {
+    const options = {
+        strings: ["", "Full stack web developer", "Laravel Developer", "Web Designer", "Vue Developer"],
+        typeSpeed: 100,
+        backSpeed: 40,
+        loop: true,
+    }
+
+    new Typed(typedText.value, options)
+}
+onMounted(() => {
+    handleTypeAnimation()
+})
+</script>
+
+<style>
+  @keyframes loadingSlide {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(300%);
+    }
+  }
+
+  .loading-bar {
+    animation: loadingSlide 3s linear infinite;
+  }
+</style>
