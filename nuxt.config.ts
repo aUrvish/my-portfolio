@@ -20,7 +20,17 @@ export default defineNuxtConfig({
     }
   },
   css: ['@/assets/css/main.css'],
-  modules: ['@nuxtjs/tailwindcss'],
+  modules: ['@nuxtjs/tailwindcss', '@pinia/nuxt', 'pinia-plugin-persistedstate'],
+  imports: {
+    dirs: [],
+    imports: [
+      {
+        from: 'pinia',
+        name: 'defineStore',
+        as: 'defineStore',
+      },
+    ],
+  },
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true }
 })

@@ -1,9 +1,13 @@
-.dark > body {
-    background-color: #121212;
+html {
+    height: 100%;
+    width: 100%;
 }
 
-.dark > body::before {
-    opacity: 0.03;
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
 }
 
 body::before {
@@ -15,4 +19,52 @@ body::before {
     background-repeat: repeat;
     opacity: 0.08;
     z-index: -1;
+}
+
+.dark > body {
+    background-color: #121212;
+}
+
+.dark > body::before {
+    opacity: 0.03;
+}
+
+.slide-up-enter-active,
+.slide-up-leave-active {
+    transition: all 0.3s ease;
+}
+
+.slide-up-enter-from {
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.slide-up-enter-to {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.slide-up-leave-from {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.slide-up-leave-to {
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+    opacity: 0;
+}
+
+.fade-enter-to,
+.fade-leave-from {
+    opacity: 1;
 }
