@@ -1,13 +1,13 @@
 <template>
-    <div class="md:py-20 py-8 flex md:flex-row flex-col justify-center md:items-start items-center md:gap-12 gap-6">
+    <div class="md:py-20 py-8 flex md:flex-row flex-col justify-between items-center md:gap-12 gap-6">
         <div class="md:max-w-[280px] max-w-[180px] relative">
             <img src="../../assets/images/me.jpg"
-                class="w-full aspect-square rounded-3xl border-2 p-1 dark:border-neutral-800"
+                class="w-full aspect-square md:rounded-3xl rounded-2xl border-2 p-1 dark:border-neutral-800"
                 alt="Urvish Mandaliya" />
             <p
-                class="absolute right-0 bottom-0 md:text-2xl text-xl p-2 dark:bg-black/90 bg-white/90 rounded-full translate-x-1/4 translate-y-1/4 dark:border-neutral-800 border-2">👋</p>
+                class="absolute right-0 bottom-0 md:text-2xl text-xl p-2 dark:bg-black bg-white rounded-full translate-x-1/4 translate-y-1/4 dark:border-neutral-800 border-2">👋</p>
         </div>
-        <div class="max-w-xl">
+        <div class="max-w-2xl">
             <!-- <h1>Hero component</h1> -->
             <p class="capitalize dark:text-neutral-400 text-neutral-700 py-1.5 rounded-md md:px-4 px-2.5 border w-fit font-semibold dark:border-neutral-800 md:text-base text-sm"
                 ><span ref="typedText"></span></p>
@@ -42,7 +42,7 @@ const typedText = ref(null)
 
 const handleTypeAnimation = () => {
     const options = {
-        strings: ["", "Full stack web developer", "Laravel Developer", "Web Designer", "Vue Developer"],
+        strings: ["", "Full stack web developer", "Laravel Developer", "Web Designer", "Vue.js Developer"],
         typeSpeed: 100,
         backSpeed: 40,
         loop: true,
