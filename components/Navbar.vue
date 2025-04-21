@@ -1,8 +1,8 @@
 <template>
-    <header class="md:py-5 py-3 px-3 sticky top-0 backdrop-blur-md z-50">
+    <header class="md:py-5 py-3 px-4 sticky top-0 backdrop-blur-md z-50">
         <div class="max-w-screen-lg mx-auto flex justify-between gap-4 items-center">
             <div class="flex items-center gap-4">
-                <button class="cursor-pointer px-1 md:hidden" @click="isOpenLinkMenu = true">
+                <button class="cursor-pointer md:hidden" @click="isOpenLinkMenu = true">
                     <Menu class="dark:text-neutral-100 w-6" />
                 </button>
 
@@ -30,7 +30,7 @@
                             <component :is="activeModeObj.icon" class="dark:text-neutral-100 w-5" />
                         </button>
                         <transition name="slide-up">
-                            <ul class="absolute top-[125%] flex flex-col gap-1 right-0 rounded-md border dark:border-neutral-800 dark:bg-black/90 w-40 p-1.5 bg-white/90"
+                            <ul class="absolute top-[125%] flex flex-col gap-1 right-0 rounded-md border dark:border-neutral-800 dark:bg-black w-40 p-1.5 bg-white"
                                 v-show="isShowModeMenu">
                                 <li class="flex items-center gap-3 px-2 cursor-pointer dark:hover:bg-white/10 py-1 rounded-md group"
                                     v-for="(mode, index) in themeMode" :key="index"
