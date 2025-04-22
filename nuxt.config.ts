@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
   app: {
     head: {
+      title: 'Urvish Mandaliya',
       link: [
         {
           rel: 'preconnect',
@@ -15,6 +16,11 @@ export default defineNuxtConfig({
         {
           rel: 'stylesheet',
           href: 'https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap'
+        },
+        { 
+          rel: 'icon', 
+          type: 'image/png', 
+          href: '/favicon.png' 
         }
       ]
     }

@@ -1,5 +1,5 @@
 <template>
-    <div class="md:py-20 py-8 flex md:flex-row flex-col justify-between items-center md:gap-12 gap-6">
+    <div class="md:py-28 py-8 flex md:flex-row flex-col justify-between items-center md:gap-12 gap-6">
         <div class="md:max-w-[280px] max-w-[180px] relative">
             <img src="../../assets/images/me.jpg"
                 class="w-full aspect-square md:rounded-3xl rounded-2xl border-2 p-1 dark:border-neutral-800"
@@ -16,7 +16,7 @@
                 <div class="h-full w-1/3 bg-blue-500 rounded-md loading-bar" ></div>
             </div>
             <p class="dark:text-neutral-400 md:text-base text-sm mt-4">
-                🚀 I'm a passionate Full Stack Web Developer with 2 years of experience in building dynamic and scalable web apps using Vue.js ⚙️ and Laravel 🛠️. I craft clean, responsive UIs and develop robust backends 💡. I love solving real-world problems with code and constantly strive to improve and grow my skills 📈.
+                I'm a passionate Full Stack Web Developer with 2 years of experience in building dynamic and scalable web apps using Vue.js and Laravel. I craft clean, responsive UIs and develop robust backends. I love solving real-world problems with code and constantly strive to improve and grow my skills 🚀.
             </p>
 
             <div class="mt-6 flex items-center md:gap-4 gap-2">
