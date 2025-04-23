@@ -1,24 +1,26 @@
 html {
-    height: 100%;
+    min-height: 100%;
     width: 100%;
 }
 
 body {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    min-height: 100%;
     width: 100%;
+    position: relative;
 }
 
 body::before {
     content: '';
-    position: absolute;
+    position: fixed;
     inset: 0;
     background-image: url(/assets/images/noise.png);
     background-size: 182px;
     background-repeat: repeat;
     opacity: 0.08;
     z-index: -1;
+    pointer-events: none;
 }
 
 .dark > body {
