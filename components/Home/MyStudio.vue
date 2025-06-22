@@ -1,13 +1,13 @@
 <template>
   <div class="grid md:grid-cols-2 sm:gap-6 gap-4 py-8">
     <div
-      class="dark:bg-white/5 bg-black/5 md:p-6 p-4 rounded-lg md:border-2 border border-neutral-200 dark:border-neutral-700"
+      class="dark:bg-white/5 bg-black/10 md:p-6 p-4 rounded-lg md:border-2 border border-neutral-200 dark:border-neutral-700"
     >
       <Laptop
         class="md:w-12 md:h-12 w-10 h-10 dark:text-neutral-100 text-neutral-700"
       />
       <h6
-        class="md:text-xl text-lg md:mt-4 mt-3 dark:text-neutral-100 font-semibold"
+        class="md:text-xl text-lg md:mt-4 mt-3 dark:text-neutral-100 font-semibold capitalize"
       >
         Full Stack web development
       </h6>
@@ -20,7 +20,7 @@
       </p>
     </div>
     <div
-      class="dark:bg-white/5 bg-black/5 md:p-6 p-4 rounded-lg md:border-2 border border-neutral-200 dark:border-neutral-700"
+      class="dark:bg-white/5 bg-black/10 md:p-6 p-4 rounded-lg md:border-2 border border-neutral-200 dark:border-neutral-700"
     >
       <Palette
         class="md:w-12 md:h-12 w-10 h-10 dark:text-neutral-100 text-neutral-700"

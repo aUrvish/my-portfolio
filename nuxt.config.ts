@@ -2,41 +2,45 @@
 export default defineNuxtConfig({
   app: {
     head: {
-      title: 'Urvish Mandaliya',
+      title: "Urvish Mandaliya",
       link: [
         {
-          rel: 'preconnect',
-          href: 'https://fonts.googleapis.com'
+          rel: "preconnect",
+          href: "https://fonts.googleapis.com",
         },
         {
-          rel: 'preconnect',
-          href: 'https://fonts.gstatic.com',
-          crossorigin: ''
+          rel: "preconnect",
+          href: "https://fonts.gstatic.com",
+          crossorigin: "",
         },
         {
-          rel: 'stylesheet',
-          href: 'https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap'
+          rel: "stylesheet",
+          href: "https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap",
         },
-        { 
-          rel: 'icon', 
-          type: 'image/png', 
-          href: '/favicon.png' 
-        }
-      ]
-    }
+        {
+          rel: "icon",
+          type: "image/png",
+          href: "/favicon.png",
+        },
+      ],
+    },
   },
-  css: ['@/assets/css/main.css'],
-  modules: ['@nuxtjs/tailwindcss', '@pinia/nuxt', 'pinia-plugin-persistedstate'],
+  css: ["@/assets/css/main.css"],
+  modules: [
+    "@nuxtjs/tailwindcss",
+    "@pinia/nuxt",
+    "pinia-plugin-persistedstate",
+  ],
   imports: {
-    dirs: [],
+    dirs: ["utils"],
     imports: [
       {
-        from: 'pinia',
-        name: 'defineStore',
-        as: 'defineStore',
+        from: "pinia",
+        name: "defineStore",
+        as: "defineStore",
       },
     ],
   },
-  compatibilityDate: '2024-11-01',
-  devtools: { enabled: true }
-})
+  compatibilityDate: "2024-11-01",
+  devtools: { enabled: true },
+});
