@@ -23,7 +23,7 @@
         a Full-Stack Web Developer
       </p>
       <p
-        class="dark:text-neutral-400 md:text-lg md:leading-relaxed text-base md:mt-6 mt-4"
+        class="dark:text-neutral-400 md:text-lg md:leading-relaxed text-sm md:mt-6 mt-4"
       >
         I'm a passionate
         <span
@@ -60,7 +60,7 @@
           <p class="uppercase font-medium md:text-base text-sm">Contact me</p>
         </button>
         <button
-          class="md:py-2 py-1.5 flex items-center gap-2 px-3 cursor-pointer rounded-md bg-neutral-200 dark:bg-white/10 dark:hover:bg-white/15 text-neutral-700 dark:text-neutral-100"
+          class="md:py-2 py-1.5 flex items-center gap-2 px-3 cursor-pointer rounded-md bg-black/10 hover:bg-black/5 dark:bg-white/10 dark:hover:bg-white/15 text-neutral-700 dark:text-neutral-100"
         >
           <ArrowDownToLine class="md:w-5 w-4" />
           <p class="uppercase font-medium md:text-base text-sm">
