@@ -75,6 +75,7 @@
                 v-for="(tools, ind) in project.technology"
                 :key="ind"
                 :name="tools"
+                size="small"
               />
             </div>
             <a
