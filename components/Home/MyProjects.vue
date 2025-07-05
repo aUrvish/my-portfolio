@@ -90,6 +90,17 @@
         </div>
       </div>
     </div>
+    <div class="flex flex-col gap-1 justify-center items-center" >
+      <p class="text-neutral-700 dark:text-neutral-100 md:text-base text-sm">Want to see more?</p>
+      <RouterLink :to="{name : 'projects'}"
+        class="md:py-2 py-1.5 flex items-center gap-2 px-3 cursor-pointer rounded-md bg-black/10 hover:bg-black/5 dark:bg-white/10 dark:hover:bg-white/15 text-neutral-700 dark:text-neutral-100"
+      >
+        <p class="capitalize font-medium md:text-base text-sm">
+          View All Projects
+        </p>
+        <ArrowRight class="md:w-5 w-4" />
+      </RouterLink>
+    </div>
   </div>
 </template>
 

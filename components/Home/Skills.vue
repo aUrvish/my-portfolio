@@ -4,7 +4,7 @@
       <h1
         class="md:text-2xl text-xl dark:text-neutral-100 text-neutral-800 dark:font-semibold font-bold"
       >
-        Skills<span class="text-blue-500 font-bold text-3xl">.</span>
+      Technologies I use<span class="text-blue-500 font-bold text-3xl">.</span>
       </h1>
       <p
         class="md:text-base text-sm dark:text-neutral-100 text-neutral-800 dark:font-extralight font-normal"
@@ -28,7 +28,7 @@
       <p
         class="mt-7 uppercase dark:font-normal font-semibold md:text-lg text-base text-neutral-700 dark:text-neutral-300"
       >
-        Technologies I use
+        Tech Stack
       </p>
       <div class="flex md:gap-4 gap-2.5 items-center flex-wrap mt-3">
         <LazyCommonTechnology
