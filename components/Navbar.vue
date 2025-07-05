@@ -167,6 +167,14 @@ const isOpenLinkMenu = ref(false);
 router.beforeEach(() => {
   isOpenLinkMenu.value = false;
 });
+
+watch(isOpenLinkMenu, (newVal) => {
+  if (newVal) {
+    document.body.classList.add('overflow-hidden');
+  }else{
+    document.body.classList.remove('overflow-hidden');
+  }
+})
 </script>
 
 <style scoped>

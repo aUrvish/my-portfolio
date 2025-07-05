@@ -4,6 +4,7 @@
       <HomeHero />
       <HomeMyStudio />
       <HomeMyProjects />
+      <HomeSkills />
     </div>
   </section>
 </template>

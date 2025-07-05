@@ -11,7 +11,7 @@ body {
   position: relative;
 }
 
-body::before {
+html::before {
   content: "";
   position: fixed;
   inset: 0;
@@ -23,11 +23,11 @@ body::before {
   pointer-events: none;
 }
 
-.dark > body {
+.dark {
   background-color: #121212;
 }
 
-.dark > body::before {
+.dark::before {
   opacity: 0.03;
 }
 
