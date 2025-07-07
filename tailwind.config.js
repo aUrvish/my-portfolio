@@ -6,6 +6,7 @@ export default {
     extend: {
       fontFamily: {
         sans: ['"Geist Mono"', 'monospace'],
+        instrument: ['"Instrument Sans"', 'sans-serif'],
       }
     },
   },
