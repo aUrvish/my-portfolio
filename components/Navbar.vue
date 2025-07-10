@@ -1,7 +1,10 @@
 <template>
-  <header class="md:py-5 py-3 px-4 sticky top-0 backdrop-blur-md z-50">
+  <header
+    class="md:py-5 py-3 px-4 fixed w-full top-0 z-50 transition-all"
+    :class="blurNav"
+  >
     <div
-      class="max-w-screen-lg mx-auto flex justify-between gap-4 items-center"
+      class="max-w-screen-xl mx-auto flex justify-between gap-4 items-center md:pl-8"
     >
       <div class="flex items-center gap-4">
         <button class="cursor-pointer md:hidden" @click="isOpenLinkMenu = true">
@@ -17,21 +20,21 @@
       </div>
 
       <div class="flex justify-between gap-8 items-center">
-        <ul class="gap-3 items-center links md:flex hidden">
+        <ul class="gap-2.5 items-center links md:flex hidden">
           <li v-for="(link, index) in links" :key="index">
             <RouterLink
               :to="{ name: link.route }"
-              class="dark:text-neutral-400 dark:hover:text-neutral-100 px-3 py-2 dark:hover:bg-white/10 rounded-md group capitalize text-neutral-700 hover:text-black hover:bg-black/10"
+              class="dark:text-neutral-400 dark:hover:text-neutral-100 px-2.5 py-1.5 dark:hover:bg-white/10 rounded-sm group capitalize text-neutral-700 hover:text-black hover:bg-black/10"
             >
               {{ link.name }}</RouterLink
             >
           </li>
         </ul>
 
-        <div class="flex justify-between gap-2 items-center">
+        <div class="flex justify-between gap-2 items-strat">
           <div class="relative">
             <button
-              class="md:py-1.5 py-[5px] md:px-3 px-2 cursor-pointer rounded-md hover:bg-black/10 dark:hover:bg-white/10"
+              class="py-1 md:px-2.5 px-2 cursor-pointer rounded-sm hover:bg-black/10 dark:hover:bg-white/10"
               @click="isShowModeMenu = !isShowModeMenu"
               v-click-outside="() => (isShowModeMenu = false)"
             >
@@ -43,11 +46,11 @@
             </button>
             <transition name="slide-up">
               <ul
-                class="absolute top-[125%] flex flex-col gap-1 right-0 rounded-md border dark:border-neutral-800 dark:bg-neutral-900 w-40 p-1.5 bg-white"
+                class="absolute top-[125%] flex flex-col gap-1 right-0 rounded-sm border dark:border-neutral-800 dark:bg-neutral-900 w-40 p-1.5 bg-white"
                 v-show="isShowModeMenu"
               >
                 <li
-                  class="flex items-center gap-3 px-2 cursor-pointer dark:hover:bg-white/10 py-1 rounded-md group"
+                  class="flex items-center gap-3 px-2 cursor-pointer dark:hover:bg-white/10 py-1 rounded-sm group"
                   v-for="(mode, index) in themeMode"
                   :key="index"
                   @click="themeStore.setTheme(mode.name)"
@@ -81,10 +84,10 @@
             </transition>
           </div>
           <button
-            class="md:py-1.5 py-[5px] flex items-center gap-1 px-3 cursor-pointer rounded-md bg-blue-500 hover:bg-blue-600 text-neutral-100"
+            class="md:py-1 py-1 h-fit flex items-center gap-1 px-2 cursor-pointer rounded-sm bg-blue-500 hover:bg-blue-600 text-neutral-100"
           >
             <ArrowDownToLine class="md:w-[18px] w-4" />
-            <p class="uppercase md:text-base text-sm">Resume</p>
+            <p class="uppercase md:text-sm text-xs">Download CV</p>
           </button>
         </div>
       </div>
@@ -170,11 +173,28 @@ router.beforeEach(() => {
 
 watch(isOpenLinkMenu, (newVal) => {
   if (newVal) {
-    document.body.classList.add('overflow-hidden');
-  }else{
-    document.body.classList.remove('overflow-hidden');
+    document.body.classList.add("overflow-hidden");
+  } else {
+    document.body.classList.remove("overflow-hidden");
   }
-})
+});
+
+const blurNav = ref("");
+const handleScroll = () => {
+  if (window.scrollY >= 50) {
+    blurNav.value = "backdrop-blur-md";
+  } else {
+    blurNav.value = "";
+  }
+};
+
+onMounted(() => {
+  window.addEventListener("scroll", handleScroll);
+});
+
+onBeforeUnmount(() => {
+  window.removeEventListener("scroll", handleScroll);
+});
 </script>
 
 <style scoped>

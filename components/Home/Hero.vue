@@ -1,73 +1,62 @@
 <template>
-  <div
-    class="md:py-28 sm:py-20 py-12 flex md:flex-row flex-col justify-between items-center md:gap-12 gap-6"
-  >
-    <div>
-      <div
-        class="flex sm:flex-row flex-col-reverse md:items-end md:gap-4 gap-3"
-      >
-        <p
-          class="dark:text-white mt-2 font-black md:text-5xl sm:text-4xl text-3xl leading-none"
-        >
-          Hey👋, I'm <span class="text-blue-500">Urvish</span>
-        </p>
-        <img
-          src="../../assets/images/me.jpg"
-          class="w-full max-w-12 aspect-square rounded-full border border-neutral-400"
-          alt="Urvish Mandaliya"
-        />
-      </div>
+  <div class="min-h-dvh flex justify-center flex-col lg:pt-20 pt-40 pb-8">
+    <div class="md:border-l-[3px] border-blue-500 md:pl-8 mt-6">
       <p
-        class="dark:text-white mt-2 font-black lg:text-5xl sm:text-4xl text-xl"
+        class="dark:text-white font-instrument font-normal md:text-5xl text-4xl"
+      >
+        Hey👋, I'm <span class="sm:inline hidden">Urvish Mandaliya</span>
+      </p>
+    </div>
+    <p
+      class="dark:text-white font-instrument font-normal text-4xl sm:hidden block"
+    >
+      Urvish Mandaliya
+    </p>
+    <div class="md:pl-8">
+      <p
+        class="text-blue-500 font-normal font-instrument lg:mt-4 mt-2 md:text-4xl sm:text-3xl text-2xl"
       >
         a Full-Stack Web Developer
       </p>
       <p
-        class="dark:text-neutral-400 md:text-lg md:leading-relaxed text-sm md:mt-6 mt-4"
+        class="md:mt-8 mt-5 dark:text-neutral-300 dark:font-light font-normal text-neutral-700 text-base max-w-screen-md font-instrument"
       >
-        I'm a passionate
-        <span
-          class="dark:bg-white/10 bg-neutral-200 dark:text-neutral-300 text-neutral-700 leading-tight font-medium px-1.5 rounded-md"
-        >
-          Full Stack Web Developer</span
-        >
-        with
-        <span
-          class="dark:bg-white/10 bg-neutral-200 dark:text-neutral-300 text-neutral-700 leading-tight font-medium px-1.5 rounded-md"
-          >2+ years</span
-        >
-        of experience in building dynamic and scalable web applications using
-        <span
-          class="dark:bg-white/10 bg-neutral-200 leading-tight font-medium px-1.5 rounded-md dark:text-neutral-300 text-neutral-700"
-          >Vue.js</span
-        >
-        and
-        <span
-          class="dark:bg-white/10 bg-neutral-200 leading-tight font-medium px-1.5 rounded-md dark:text-neutral-300 text-neutral-700"
-        >
-          Laravel</span
-        >. I specialize in crafting clean, responsive user interfaces and
-        developing robust, secure backends. I love solving real-world problems
-        with code, exploring new technologies, building innovative solutions,
-        and constantly pushing myself to grow and improve every day.
+        I'm a passionate Full Stack Web Developer with 2+ years of experience
+        building dynamic, scalable web applications using Vue.js and Laravel.
+        Specialized in crafting clean, responsive interfaces and developing
+        robust, secure backends.
       </p>
-
       <div class="mt-6 flex items-center md:gap-4 gap-2">
         <button
-          class="md:py-2 py-1.5 flex items-center gap-3 px-3.5 cursor-pointer rounded-md bg-blue-500 hover:bg-blue-600 text-neutral-100"
+          class="py-1.5 flex items-center gap-2.5 px-3 cursor-pointer rounded-sm bg-blue-500 hover:bg-blue-600 text-neutral-100"
         >
-          <Users class="md:w-5 w-4" />
-          <p class="uppercase font-medium md:text-base text-sm">Contact me</p>
+          <Users class="w-4" />
+          <p class="uppercase font-medium text-sm">Contact me</p>
         </button>
         <button
-          class="md:py-2 py-1.5 flex items-center gap-2 px-3 cursor-pointer rounded-md bg-black/10 hover:bg-black/5 dark:bg-white/10 dark:hover:bg-white/15 text-neutral-700 dark:text-neutral-100"
+          class="py-1.5 flex items-center gap-2.5 px-3 cursor-pointer rounded-sm bg-black/10 hover:bg-black/5 dark:bg-white/10 dark:hover:bg-white/15 text-neutral-700 dark:text-neutral-100"
         >
-          <ArrowDownToLine class="md:w-5 w-4" />
-          <p class="uppercase font-medium md:text-base text-sm">
-            Download Resume
-          </p>
+          <ArrowDownToLine class="w-4" />
+          <p class="uppercase font-medium md:text-sm">Download CV</p>
         </button>
       </div>
+      <div class="flex gap-3 items-center md:mt-6 mt-4">
+        <Mail
+          class="md:w-[18px] w-4 dark:text-neutral-400 text-neutral-600 stroke-1"
+        />
+        <a
+          class="text-base dark:text-neutral-400 text-neutral-600 dark:font-extralight font-light"
+          href="mailto:mandaliyaurvishj7@gmail.com"
+          >mandaliyaurvishj7@gmail.com</a
+        >
+      </div>
+    </div>
+    <div class="md:pl-8">
+      <Feature class="md:mt-12 mt-8" />
     </div>
   </div>
 </template>
+
+<script setup>
+import Feature from "../Common/Feature.vue";
+</script>

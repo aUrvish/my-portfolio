@@ -18,6 +18,10 @@ export default defineNuxtConfig({
           href: "https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap",
         },
         {
+          rel: "stylesheet",
+          href: "https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap",
+        },
+        {
           rel: "icon",
           type: "image/png",
           href: "/favicon.png",
