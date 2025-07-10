@@ -1,6 +1,8 @@
 <template>
-  <!-- backdrop-blur-md -->
-  <header class="md:py-5 py-3 px-4 fixed w-full top-0 z-50">
+  <header
+    class="md:py-5 py-3 px-4 fixed w-full top-0 z-50 transition-all"
+    :class="blurNav"
+  >
     <div
       class="max-w-screen-xl mx-auto flex justify-between gap-4 items-center md:pl-8"
     >
@@ -171,11 +173,28 @@ router.beforeEach(() => {
 
 watch(isOpenLinkMenu, (newVal) => {
   if (newVal) {
-    document.body.classList.add('overflow-hidden');
-  }else{
-    document.body.classList.remove('overflow-hidden');
+    document.body.classList.add("overflow-hidden");
+  } else {
+    document.body.classList.remove("overflow-hidden");
   }
-})
+});
+
+const blurNav = ref("");
+const handleScroll = () => {
+  if (window.scrollY >= 50) {
+    blurNav.value = "backdrop-blur-md";
+  } else {
+    blurNav.value = "";
+  }
+};
+
+onMounted(() => {
+  window.addEventListener("scroll", handleScroll);
+});
+
+onBeforeUnmount(() => {
+  window.removeEventListener("scroll", handleScroll);
+});
 </script>
 
 <style scoped>
