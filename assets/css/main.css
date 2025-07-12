@@ -70,3 +70,12 @@ html::before {
 .fade-leave-from {
   opacity: 1;
 }
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+}
