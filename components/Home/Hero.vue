@@ -1,10 +1,16 @@
 <template>
-  <div class="min-h-dvh flex justify-center flex-col lg:pt-20 pt-40 pb-8">
+  <div class="min-h-dvh flex justify-center flex-col lg:pt-20 pt-28 pb-8">
     <div class="md:border-l-[3px] border-blue-500 md:pl-8 mt-6">
       <p
-        class="dark:text-white font-instrument font-normal md:text-5xl text-4xl"
+        class="dark:text-white font-instrument font-normal md:text-5xl text-4xl flex items-center gap-3"
       >
-        Hey👋, I'm <span class="sm:inline hidden">Urvish Mandaliya</span>
+        Hey, I'm
+        <img
+          src="../../assets/images/me.jpg"
+          class="md:max-w-10 max-w-9 inline-block aspect-square rounded-full dark:border-0 border border-neutral-400"
+          alt="Urvish Mandaliya"
+        />
+        <span class="sm:inline hidden">Urvish Mandaliya</span>
       </p>
     </div>
     <p
@@ -19,7 +25,7 @@
         a Full-Stack Web Developer
       </p>
       <p
-        class="md:mt-8 mt-5 dark:text-neutral-300 dark:font-light font-normal text-neutral-700 text-base max-w-screen-md font-instrument"
+        class="md:mt-8 mt-5 dark:text-neutral-300 dark:font-light font-normal text-neutral-700 text-base max-w-screen-md md:tracking-widest tracking-wider font-instrument"
       >
         I'm a passionate Full Stack Web Developer with 2+ years of experience
         building dynamic, scalable web applications using Vue.js and Laravel.
