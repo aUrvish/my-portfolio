@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-dvh flex justify-center flex-col lg:pt-20 pt-28 pb-20">
+  <div class="min-h-dvh flex justify-center flex-col pt-32 pb-20">
     <div class="md:border-l-[3px] border-blue-500 md:pl-8 mt-6">
       <p
         class="dark:text-white font-instrument font-normal md:text-5xl text-4xl flex items-center gap-3"

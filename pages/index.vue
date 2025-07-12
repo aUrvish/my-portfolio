@@ -6,6 +6,7 @@
       <HomeHero />
       <CommonAbout />
       <HomeProjects />
+      <CommonSkills />
     </div>
   </section>
 </template>
