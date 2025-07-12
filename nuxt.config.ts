@@ -47,4 +47,9 @@ export default defineNuxtConfig({
   },
   compatibilityDate: "2024-11-01",
   devtools: { enabled: true },
+  runtimeConfig: {
+    public : {
+      crispWebsiteId : process.env.CRISP_WEBSITE_ID
+    }
+  }
 });
