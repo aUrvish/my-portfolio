@@ -1,12 +1,9 @@
 <template>
   <div class="py-4">
-    <div
-      class="border-l-[3px] border-blue-500 md:pl-8 pl-4 flex md:gap-4 gap-3 items-center md:py-1.5 py-1"
-    >
-      <p class="md:text-2xl text-xl font-semibold text-blue-500 capitalize">
-        Technologies I use<span class="dark:text-white text-black">.</span>
-      </p>
-    </div>
+    <CommonHeading
+      title="Technologies I use"
+      caption="Over the years, I have worked with a variety of technologies."
+    />
     <div class="md:pl-8 mt-8">
       <p
         class="uppercase dark:font-normal font-semibold md:text-lg text-base text-neutral-700 dark:text-neutral-300"

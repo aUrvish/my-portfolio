@@ -1,12 +1,6 @@
 <template>
   <div class="py-4">
-    <div
-      class="border-l-[3px] border-blue-500 md:pl-8 pl-4 flex md:gap-4 gap-3 items-center md:py-1.5 py-1"
-    >
-      <p class="md:text-2xl text-xl font-semibold text-blue-500 capitalize">
-        About Me<span class="dark:text-white text-black">.</span>
-      </p>
-    </div>
+    <CommonHeading title="About Me" />
     <div class="md:pl-8 md:mt-8 mt-6">
       <p
         class="md:indent-16 indent-6 md:text-base text-sm text-neutral-600 dark:text-neutral-400"
