@@ -6,6 +6,14 @@ export const getToolsImageUrl = (url) => {
   return images[url];
 };
 
+export const getCertificateImageUrl = (url) => {
+  const images = import.meta.glob("@/assets/images/certificates/*", {
+    eager: true,
+    import: "default",
+  });
+  return images[url];
+};
+
 export const getImageUrl = (url) => {
   const images = import.meta.glob("@/assets/images/*", {
     eager: true,
