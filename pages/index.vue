@@ -7,6 +7,7 @@
       <CommonAbout />
       <HomeProjects />
       <CommonSkills />
+      <CommonCertificate />
     </div>
   </section>
 </template>
