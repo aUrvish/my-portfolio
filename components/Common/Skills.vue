@@ -1,5 +1,5 @@
 <template>
-  <div class="py-4">
+  <div>
     <CommonHeading
       title="Technologies I use"
       caption="Over the years, I have worked with a variety of technologies."
