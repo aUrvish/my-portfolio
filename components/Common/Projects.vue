@@ -1,5 +1,5 @@
 <template>
-  <div class="md:py-32 py-20">
+  <div>
     <CommonHeading
       title="Projects"
       caption="Explore some of my recent projects below."
