@@ -36,12 +36,51 @@ export default defineNuxtConfig({
     "pinia-plugin-persistedstate",
   ],
   imports: {
-    dirs: ["utils"],
     imports: [
       {
-        from: "pinia",
-        name: "defineStore",
-        as: "defineStore",
+        from: 'vee-validate',
+        name: 'useForm',
+        as: 'useForm',
+      },
+      {
+        from: 'vee-validate',
+        name: 'useField',
+        as: 'useField',
+      },
+      {
+        from: 'vee-validate',
+        name: 'useFieldArray',
+        as: 'useFieldArray',
+      },
+      {
+        from: 'vee-validate',
+        name: 'defineRule',
+        as: 'defineRule',
+      },
+      {
+        from: 'yup',
+        name: 'object',
+        as: 'object',
+      },
+      {
+        from: 'yup',
+        name: 'string',
+        as: 'string',
+      },
+      {
+        from: 'yup',
+        name: 'number',
+        as: 'number',
+      },
+      {
+        from: 'yup',
+        name: 'boolean',
+        as: 'boolean',
+      },
+      {
+        from: 'yup',
+        name: 'array',
+        as: 'array',
       },
     ],
   },
@@ -49,7 +88,8 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   runtimeConfig: {
     public : {
-      crispWebsiteId : process.env.CRISP_WEBSITE_ID
+      crispWebsiteId : process.env.CRISP_WEBSITE_ID,
+      formSubmitKey : process.env.FORM_SUBMIT_KEY
     }
   }
 });
