@@ -83,12 +83,12 @@
               </ul>
             </transition>
           </div>
-          <button
+          <a href="/urvish-resume.pdf" download
             class="md:py-1 py-1 h-fit flex items-center gap-1 px-2 cursor-pointer rounded-sm bg-blue-500 hover:bg-blue-600 text-neutral-100"
           >
             <ArrowDownToLine class="md:w-[18px] w-4" />
             <p class="uppercase md:text-sm text-xs">Download CV</p>
-          </button>
+          </a>
         </div>
       </div>
     </div>

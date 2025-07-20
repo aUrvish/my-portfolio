@@ -39,12 +39,12 @@
           <Users class="w-4" />
           <p class="uppercase font-medium text-sm">Contact me</p>
         </button>
-        <button
+        <a href="/urvish-resume.pdf" download
           class="py-1.5 flex items-center gap-2.5 px-3 cursor-pointer rounded-sm bg-black/10 hover:bg-black/5 dark:bg-white/10 dark:hover:bg-white/15 text-neutral-700 dark:text-neutral-100"
         >
           <ArrowDownToLine class="w-4" />
           <p class="uppercase font-medium md:text-sm">Download CV</p>
-        </button>
+        </a>
       </div>
       <div class="flex gap-3 items-center md:mt-6 mt-4">
         <Mail
