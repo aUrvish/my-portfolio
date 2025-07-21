@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-dvh flex justify-center flex-col pt-32 pb-20">
+  <div class="flex justify-center flex-col md:pt-40 pt-32 md:pb-32 pb-24">
     <div class="md:border-l-[3px] border-blue-500 md:pl-8 mt-6">
       <p
         class="dark:text-white font-instrument font-normal md:text-5xl text-4xl flex items-center gap-3"
@@ -39,7 +39,9 @@
           <Users class="w-4" />
           <p class="uppercase font-medium text-sm">Contact me</p>
         </button>
-        <a href="/urvish-resume.pdf" download
+        <a
+          href="/urvish-resume.pdf"
+          download
           class="py-1.5 flex items-center gap-2.5 px-3 cursor-pointer rounded-sm bg-black/10 hover:bg-black/5 dark:bg-white/10 dark:hover:bg-white/15 text-neutral-700 dark:text-neutral-100"
         >
           <ArrowDownToLine class="w-4" />

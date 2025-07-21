@@ -1,6 +1,6 @@
 <template>
   <header
-    class="md:py-5 py-3 px-4 fixed w-full top-0 z-50 transition-all"
+    class="md:py-5 py-3 md:px-8 px-4 fixed w-full top-0 z-50 transition-all"
     :class="blurNav"
   >
     <div
@@ -83,7 +83,9 @@
               </ul>
             </transition>
           </div>
-          <a href="/urvish-resume.pdf" download
+          <a
+            href="/urvish-resume.pdf"
+            download
             class="md:py-1 py-1 h-fit flex items-center gap-1 px-2 cursor-pointer rounded-sm bg-blue-500 hover:bg-blue-600 text-neutral-100"
           >
             <ArrowDownToLine class="md:w-[18px] w-4" />
