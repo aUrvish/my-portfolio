@@ -1,6 +1,6 @@
 <template>
   <header
-    class="md:py-5 py-3 md:px-8 px-4 fixed w-full top-0 z-50 transition-all"
+    class="md:py-5 py-3 px-4 fixed w-full top-0 z-50 transition-all"
     :class="blurNav"
   >
     <div
@@ -133,11 +133,11 @@ const links = ref([
     route: "index",
   },
   {
-    name: "Projects",
+    name: "About",
     route: "projects",
   },
   {
-    name: "About",
+    name: "Projects",
     route: "projects",
   },
   {
