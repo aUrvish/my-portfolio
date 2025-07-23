@@ -3,14 +3,7 @@
     <div
       class="md:p-6 p-4 border border-neutral-200 dark:border-neutral-800 rounded-sm md:shadow-md shadow bg-neutral-100 dark:bg-[#191919]"
     >
-      <div
-        class="grid"
-        :class="
-          page == 'contact'
-            ? 'grid-cols-1 gap-4'
-            : 'md:grid-cols-2 md:gap-6 gap-4'
-        "
-      >
+      <div class="grid md:grid-cols-2 md:gap-6 gap-4">
         <div class="flex flex-col gap-2">
           <label
             for="name"
@@ -56,7 +49,7 @@
         <textarea
           id="message"
           v-model="message"
-          rows="4"
+          rows="5"
           placeholder="Hello there, I would like to ask you about..."
           class="border border-neutral-200 dark:border-neutral-800 md:py-1.5 py-2 px-3 rounded-sm bg-neutral-50 dark:bg-neutral-900 md:text-base text-sm dark:text-white"
         ></textarea>
@@ -92,12 +85,6 @@
 </template>
 
 <script setup>
-const props = defineProps({
-  page: {
-    default: "home",
-  },
-});
-
 const schema = object({
   name: string().required("Name is required"),
   email: string().required("Email is required").email("Invalid email"),

@@ -5,7 +5,7 @@
       caption="Let’s turn your ideas into code."
     />
     <div class="md:pl-8 mt-8">
-      <CommonContact page="home" />
+      <CommonContact />
     </div>
   </div>
 </template>

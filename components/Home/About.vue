@@ -5,9 +5,11 @@
       <p
         class="md:indent-16 indent-6 md:text-base text-sm text-neutral-600 dark:text-neutral-400"
       >
-        👋 Hi! I'm Urvish Mandaliya, a passionate Full Stack Web Developer with
-        more than 2 years of experience in creating dynamic and scalable web
-        applications with Vue.js and Laravel.
+        👋 Hi! I'm Urvish Mandaliya, a passionate
+        <b>Full Stack Web Developer</b>
+        with more than <b> {{ experienceInyear() }} years of experience </b> in
+        creating dynamic and scalable web applications with <b>Vue.js</b> and
+        <b>Laravel</b>.
       </p>
       <p
         class="md:indent-16 indent-6 md:text-base text-sm md:mt-6 mt-3 text-neutral-600 dark:text-neutral-400"
@@ -21,29 +23,31 @@
         class="md:indent-16 indent-6 md:text-base text-sm md:mt-6 mt-3 text-neutral-600 dark:text-neutral-400 md:line-clamp-none line-clamp-3"
       >
         Experienced in Vue.js, I have worked extensively with state management
-        libraries like Pinia and Vuex to build efficient, reactive applications.
-        I’ve implemented dynamic routing and seamless page transitions using Vue
-        Router, enhancing the overall navigation flow. My front-end development
-        skills include crafting clean, responsive user interfaces with Tailwind
-        CSS, SCSS, and Bootstrap. I focus on writing modular, maintainable code
-        that supports fast and intuitive user experiences. Additionally, I’ve
+        libraries like <b>Pinia</b> and <b>Vuex</b> to build efficient, reactive
+        applications. I’ve implemented dynamic routing and seamless page
+        transitions using <b>Vue Router</b>, enhancing the overall navigation
+        flow. My front-end development skills include crafting clean, responsive
+        user interfaces with <b>Tailwind CSS</b>, <b>SCSS</b>, and
+        <b>Bootstrap</b>. I focus on writing modular, maintainable code that
+        supports fast and intuitive user experiences. Additionally, I’ve
         developed dynamic UI components that significantly boost app
         interactivity and usability.
       </p>
       <p
         class="md:indent-16 indent-6 md:text-base text-sm md:mt-6 mt-3 text-neutral-600 dark:text-neutral-400 md:block hidden"
       >
-        I have a solid grasp of Laravel, enabling me to build secure RESTful
-        APIs and robust backend systems. My experience includes integrating
-        Laravel Livewire to create dynamic, reactive components without relying
-        heavily on JavaScript. I’ve worked with Laravel Nova to design powerful
-        admin dashboards and manage resources efficiently. For real-time
-        functionality, I’ve utilized Laravel WebSockets, and I’ve also
-        implemented Laravel Tenancy to support scalable multi-tenant
-        architectures. I'm proficient in MySQL, handling complex data
-        relationships and performance optimizations. Additionally, I’m
-        well-versed in Laravel’s background jobs, queues, and task scheduling to
-        ensure smooth automation and improved application performance.
+        I have a solid grasp of Laravel, enabling me to build secure
+        <b>RESTful APIs</b> and robust backend systems. My experience includes
+        integrating <b>Laravel Livewire</b> to create dynamic, reactive
+        components without relying heavily on JavaScript. I’ve worked with
+        <b>Laravel Nova</b> to design powerful admin dashboards and manage
+        resources efficiently. For real-time functionality, I’ve utilized
+        <b>Laravel WebSockets</b>, and I’ve also implemented
+        <b>Laravel Tenancy</b> to support scalable multi-tenant architectures.
+        I'm proficient in <b>MySQL</b>, handling complex data relationships and
+        performance optimizations. Additionally, I’m well-versed in Laravel’s
+        background jobs, queues, and task scheduling to ensure smooth automation
+        and improved application performance.
       </p>
       <div class="mt-6">
         <RouterLink
@@ -54,35 +58,17 @@
           <ArrowUpRight class="w-5" />
         </RouterLink>
       </div>
-
-      <!-- <div class="mt-6">
-                    <div class="flex items-center gap-4">
-                        <MoveRight class="dark:text-neutral-200" />
-                        <p class="text-lg font-medium dark:text-neutral-200">Backend Skills</p>
-                    </div>
-                    <div class="flex flex-col gap-1.5 pl-1 mt-2">
-                        <div class="flex items-start gap-4">
-                            <Sparkle class="w-5 text-blue-500" />
-                            <p class="text-lg text-neutral-600 dark:text-neutral-400">Experienced in Vue.js with hands-on experience in state management using both Pinia and Vuex.</p>
-                        </div>
-                        <div class="flex items-start gap-4">
-                            <Sparkle class="w-5 text-blue-500" />
-                            <p class="text-lg text-neutral-600 dark:text-neutral-400">Used Vue Router for dynamic routing and smooth page transitions</p>
-                        </div>
-                        <div class="flex items-start gap-4">
-                            <Sparkle class="w-5 text-blue-500" />
-                            <p class="text-lg text-neutral-600 dark:text-neutral-400">Created clean, responsive UIs with Tailwind CSS, SCSS, and Bootstrap</p>
-                        </div>
-                        <div class="flex items-start gap-4">
-                            <Sparkle class="w-5 text-blue-500" />
-                            <p class="text-lg text-neutral-600 dark:text-neutral-400">Wrote modular, maintainable code and provided fast, intuitive user experiences</p>
-                        </div>
-                        <div class="flex items-start gap-4">
-                            <Sparkle class="w-5 text-blue-500" />
-                            <p class="text-lg text-neutral-600 dark:text-neutral-400">Developed dynamic UI components that improve the interactivity and usability of apps</p>
-                        </div>
-                    </div>
-                </div> -->
     </div>
   </div>
 </template>
+
+<script setup>
+const experienceInyear = () => {
+  const startDate = new Date("2023-06-01");
+  const currentDate = new Date();
+
+  const diffTime = currentDate - startDate;
+  const diffYears = diffTime / (1000 * 60 * 60 * 24 * 365.25); // Include leap years
+  return diffYears.toFixed(1);
+};
+</script>

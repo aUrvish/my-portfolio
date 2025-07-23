@@ -33,12 +33,13 @@
         robust, secure backends.
       </p>
       <div class="mt-6 flex items-center md:gap-4 gap-2">
-        <button
+        <RouterLink
+          :to="{ name: 'contact' }"
           class="py-1.5 flex items-center gap-2.5 px-3 cursor-pointer rounded-sm bg-blue-500 hover:bg-blue-600 text-neutral-100"
         >
           <Users class="w-4" />
           <p class="uppercase font-medium text-sm">Contact me</p>
-        </button>
+        </RouterLink>
         <a
           href="/urvish-resume.pdf"
           download
