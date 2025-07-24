@@ -134,7 +134,7 @@ const links = ref([
   },
   {
     name: "About",
-    route: "projects",
+    route: "about",
   },
   {
     name: "Projects",
