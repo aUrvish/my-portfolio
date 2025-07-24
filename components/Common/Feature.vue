@@ -17,7 +17,7 @@
       </p>
     </div>
     <div
-      class=" md:p-6 p-4 rounded-sm border border-neutral-300 shadow-md dark:border-neutral-700"
+      class="md:p-6 p-4 rounded-sm border border-neutral-300 shadow-md dark:border-neutral-700"
     >
       <h6
         class="md:text-xl text-lg dark:text-neutral-100 font-semibold font-instrument"
