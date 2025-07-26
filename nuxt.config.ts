@@ -33,6 +33,22 @@ export default defineNuxtConfig({
           content: "width=device-width, initial-scale=1",
         },
       ],
+      script: [
+        {
+          src:
+            "https://www.googletagmanager.com/gtag/js?id=" + process.env.GA_ID,
+          async: true,
+        },
+        {
+          innerHTML: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${process.env.GA_ID}');
+          `,
+          type: "text/javascript",
+        },
+      ],
     },
   },
   css: ["@/assets/css/main.css"],
@@ -94,6 +110,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   runtimeConfig: {
     public: {
+      gaId: process.env.GA_ID,
       crispWebsiteId: process.env.CRISP_WEBSITE_ID,
       formSubmitKey: process.env.FORM_SUBMIT_KEY,
     },
