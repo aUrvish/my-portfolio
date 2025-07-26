@@ -17,7 +17,7 @@
       </div>
     </div>
     <div class="md:pl-8 mt-10 md:mb-32 mb-24">
-      <CommonProjects />
+      <CommonProjects page="projects" />
     </div>
     <HomeContact />
   </div>

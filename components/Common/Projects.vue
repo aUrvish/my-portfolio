@@ -39,9 +39,9 @@
         >
           Ecommerce
         </li>
-        <li class="lg:block hidden">
+        <li class="lg:block hidden" v-if="page == 'home'">
           <RouterLink
-            to="#"
+            :to="{ name: 'projects' }"
             class="text-lg text-blue-500 capitalize underline underline-offset-2"
             >Show more</RouterLink
           >
@@ -58,12 +58,19 @@
         <p
           class="dark:text-neutral-400 text-neutral-600 md:mt-3 mt-2 md:text-base text-sm"
         >
-          Developed an online exam system with a modern, responsive frontend using Vue.js and Tailwind CSS for seamless user experience. Implemented state management with Pinia, interactive features with Vue-Draggable, pagination with VueAwesome-Paginate, and notifications using Vue3-Toastify.
+          Developed an online exam system with a modern, responsive frontend
+          using Vue.js and Tailwind CSS for seamless user experience.
+          Implemented state management with Pinia, interactive features with
+          Vue-Draggable, pagination with VueAwesome-Paginate, and notifications
+          using Vue3-Toastify.
         </p>
         <p
           class="dark:text-neutral-400 text-neutral-600 md:mt-3 mt-2 md:text-base text-sm"
         >
-          Backend built with Laravel, utilizing core features such as Eloquent ORM and Websockets for real-time functionality. Emphasized clear, maintainable code structure to ensure scalability and ease of collaboration with other developers.
+          Backend built with Laravel, utilizing core features such as Eloquent
+          ORM and Websockets for real-time functionality. Emphasized clear,
+          maintainable code structure to ensure scalability and ease of
+          collaboration with other developers.
         </p>
         <div class="mt-4">
           <a
@@ -103,15 +110,23 @@
         <p
           class="dark:text-neutral-400 text-neutral-600 md:mt-3 mt-2 md:text-base text-sm"
         >
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo,
-          nesciunt quos aliquam velit architecto adipisci ad inventore error
-          rem, impedit eaque unde quam reprehenderit sunt magnam porro esse
-          delectus vel?
+          Built a dynamic E-commerce web application with Nuxt.js and custom
+          CSS, focusing on responsive design and smooth user experience.
+          Implemented product filtering, listing, and intuitive UI for efficient
+          product discovery and navigation.
+        </p>
+        <p
+          class="dark:text-neutral-400 text-neutral-600 md:mt-3 mt-2 md:text-base text-sm"
+        >
+          Developed a lightweight backend using Core PHP to handle CRUD
+          operations for products, categories, and orders. Ensured clean API
+          integration with Nuxt frontend for seamless data handling and user
+          interaction.
         </p>
         <div class="mt-4">
           <a
             target="_blank"
-            href="#"
+            href="https://github.com/aUrvish/Ecommerce"
             class="py-1 w-fit flex items-center gap-1 px-3 cursor-pointer rounded-sm bg-black/10 hover:bg-black/5 dark:bg-white/10 dark:hover:bg-white/15 text-neutral-700 dark:text-neutral-100"
           >
             <p class="uppercase font-medium text-xs">View on Github</p>
@@ -120,13 +135,7 @@
         </div>
         <div class="flex gap-2 items-center flex-wrap mt-4">
           <LazyCommonTechnology
-            v-for="(tools, ind) in [
-              'laravel',
-              'vue',
-              'pinia',
-              'tailwind',
-              'javascript',
-            ]"
+            v-for="(tools, ind) in ['nuxt', 'php', 'vuex', 'javascript', 'css']"
             :key="ind"
             :name="tools"
           />
@@ -141,12 +150,18 @@
         <p
           class="dark:text-neutral-400 text-neutral-600 md:mt-3 mt-2 md:text-base text-sm"
         >
-          Developed an Online Food Ordering System using Laravel, featuring user authentication with Laravel Sanctum for secure login and session management. Designed clean and modular CRUD operations for managing products, orders, and categories to ensure a smooth admin experience.
+          Developed an Online Food Ordering System using Laravel, featuring user
+          authentication with Laravel Sanctum for secure login and session
+          management. Designed clean and modular CRUD operations for managing
+          products, orders, and categories to ensure a smooth admin experience.
         </p>
         <p
           class="dark:text-neutral-400 text-neutral-600 md:mt-3 mt-2 md:text-base text-sm"
         >
-          Integrated Razorpay for secure and efficient online payment processing, enabling customers to complete transactions seamlessly. Focused on writing maintainable, scalable backend logic with Laravel’s Eloquent ORM and built-in validation.
+          Integrated Razorpay for secure and efficient online payment
+          processing, enabling customers to complete transactions seamlessly.
+          Focused on writing maintainable, scalable backend logic with Laravel’s
+          Eloquent ORM and built-in validation.
         </p>
         <div class="mt-4">
           <a
@@ -165,9 +180,7 @@
         />
         <div class="flex gap-2 items-center flex-wrap mt-4">
           <LazyCommonTechnology
-            v-for="(tools, ind) in [
-              'laravel',
-            ]"
+            v-for="(tools, ind) in ['laravel', 'razorpay']"
             :key="ind"
             :name="tools"
           />
@@ -178,5 +191,10 @@
 </template>
 
 <script setup>
+const props = defineProps({
+  page: {
+    default: "home",
+  },
+});
 const tabIndex = ref(0);
 </script>
