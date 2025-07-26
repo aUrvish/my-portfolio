@@ -1,7 +1,7 @@
 <template>
   <div>
     <p
-      class="md:indent-16 indent-6 md:text-base text-sm text-neutral-600 dark:text-neutral-400"
+      class="md:indent-16 indent-6 text-base font-instrument md:font-sans text-neutral-600 dark:text-neutral-400"
     >
       👋 Hi! I'm Urvish Mandaliya, a passionate
       <b>Full Stack Web Developer</b>
@@ -10,7 +10,7 @@
       <b>Laravel</b>.
     </p>
     <p
-      class="md:indent-16 indent-6 md:text-base text-sm md:mt-6 mt-3 text-neutral-600 dark:text-neutral-400"
+      class="md:indent-16 indent-6 text-base font-instrument md:font-sans md:mt-6 mt-3 text-neutral-600 dark:text-neutral-400"
     >
       I have expertise in crafting clean, efficient, and responsive user
       experiences on the frontend, as well as engineering strong backend systems
@@ -18,7 +18,7 @@
       solving problems with code and taking my skills to the next level.
     </p>
     <p
-      class="md:indent-16 indent-6 md:text-base text-sm md:mt-6 mt-3 text-neutral-600 dark:text-neutral-400 md:line-clamp-none line-clamp-3"
+      class="md:indent-16 indent-6 text-base font-instrument md:font-sans md:mt-6 mt-3 text-neutral-600 dark:text-neutral-400 md:line-clamp-none line-clamp-3"
     >
       Experienced in Vue.js, I have worked extensively with state management
       libraries like <b>Pinia</b> and <b>Vuex</b> to build efficient, reactive
@@ -32,7 +32,7 @@
       usability.
     </p>
     <p
-      class="md:indent-16 indent-6 md:text-base text-sm md:mt-6 mt-3 text-neutral-600 dark:text-neutral-400"
+      class="md:indent-16 indent-6 text-base font-instrument md:font-sans md:mt-6 mt-3 text-neutral-600 dark:text-neutral-400"
       :class="page == 'home' ? 'md:block hidden' : ''"
     >
       I have a solid grasp of Laravel, enabling me to build secure
@@ -50,7 +50,7 @@
     </p>
     <template v-if="page != 'home'">
       <p
-        class="md:indent-16 indent-6 md:text-base text-sm md:mt-6 mt-3 text-neutral-600 dark:text-neutral-400"
+        class="md:indent-16 indent-6 text-base font-instrument md:font-sans md:mt-6 mt-3 text-neutral-600 dark:text-neutral-400"
       >
         In terms of deployment and server management, I have hands-on experience
         with setting up and maintaining production environments using

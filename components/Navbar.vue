@@ -141,8 +141,8 @@ const links = ref([
     route: "projects",
   },
   {
-    name: "Experience",
-    route: "projects",
+    name: "Contact",
+    route: "contact",
   },
 ]);
 
