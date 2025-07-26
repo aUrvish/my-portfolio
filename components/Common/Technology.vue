@@ -243,6 +243,12 @@ const technologies = ref([
     url: "/assets/images/tools/gitlab.svg",
     link: "https://about.gitlab.com/",
   },
+  {
+    name: "razorpay",
+    title: "Razorpay",
+    url: "/assets/images/tools/razorpay.png",
+    link: "https://razorpay.com/",
+  },
 ]);
 
 const handleSelectTechnology = () => {
