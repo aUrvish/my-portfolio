@@ -126,7 +126,7 @@
         <div class="mt-4">
           <a
             target="_blank"
-            href="https://github.com/aUrvish/Ecommerce"
+            href="https://github.com/aUrvish/fashion-ecommerce-frontEnd"
             class="py-1 w-fit flex items-center gap-1 px-3 cursor-pointer rounded-sm bg-black/10 hover:bg-black/5 dark:bg-white/10 dark:hover:bg-white/15 text-neutral-700 dark:text-neutral-100"
           >
             <p class="uppercase font-medium text-xs">View on Github</p>
