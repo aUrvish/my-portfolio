@@ -63,7 +63,7 @@
           </p>
         </a>
         <a
-          href="https://discord.com/users/1395266291094393012"
+          href="https://discord.com/users/1403568488152563803"
           target="_blank"
           class="px-3 py-2 border dark:border-neutral-700 rounded-sm flex items-center gap-3 shadow-md"
         >

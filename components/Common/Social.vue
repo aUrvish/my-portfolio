@@ -32,7 +32,7 @@
     </a>
     <a
       class="p-2 border dark:border-neutral-700 border-neutral-200 aspect-square rounded-full dark:bg-neutral-800 bg-neutral-200"
-      href="https://discord.com/users/1395266291094393012"
+      href="https://discord.com/users/1403568488152563803"
       target="_blank"
     >
       <svg
