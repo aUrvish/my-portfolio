@@ -70,7 +70,7 @@ export default defineNuxtConfig({
         },
         { 
           property: "og:image", 
-          content: "https:  //urvish.netlify.app/seo-banner.png" 
+          content: "https://urvish.netlify.app/seo-banner.png" 
         },
         { 
           name: "twitter:card", 
