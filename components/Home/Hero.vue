@@ -1,36 +1,37 @@
 <template>
   <div class="flex justify-center flex-col md:pt-40 pt-32 md:pb-32 pb-24">
     <div class="md:border-l-[3px] border-blue-500 md:pl-8 mt-6">
-      <p
+      <h3
         class="dark:text-white font-instrument font-normal md:text-5xl text-4xl flex items-center gap-3"
       >
         Hey, I'm
         <img
           src="../../assets/images/me.jpg"
           class="md:max-w-10 max-w-9 inline-block aspect-square rounded-full dark:border-0 border border-neutral-400"
-          alt="Urvish Mandaliya"
+          alt="Urvish Mandaliya – Full-Stack Web Developer"
         />
         <span class="sm:inline hidden">Urvish Mandaliya</span>
-      </p>
+      </h3>
     </div>
-    <p
+    <h3
       class="dark:text-white font-instrument font-normal text-4xl sm:hidden block"
     >
       Urvish Mandaliya
-    </p>
+    </h3>
     <div class="md:pl-8">
-      <p
+      <h1
         class="text-blue-500 font-normal font-instrument lg:mt-4 mt-2 md:text-4xl sm:text-3xl text-2xl"
       >
-        a Full-Stack Web Developer
-      </p>
+        Full-Stack Web Developer <strong class="font-normal md:text-2xl sm:text-xl text-xl block lg:inline">(Vue.js, Nuxt.js & Laravel)</strong>
+      </h1>
       <p
         class="md:mt-8 mt-5 dark:text-neutral-300 dark:font-light font-normal text-neutral-700 text-base max-w-screen-md md:tracking-widest tracking-wider font-instrument"
       >
-        I'm a passionate Full Stack Web Developer with 2+ years of experience
-        building dynamic, scalable web applications using Vue.js and Laravel.
-        Specialized in crafting clean, responsive interfaces and developing
-        robust, secure backends.
+        I’m a dedicated Full-Stack Web Developer with 2+ years of experience
+        building fast, responsive, and scalable web applications using
+        <strong>Vue.js, Nuxt.js, Laravel,</strong> and modern tooling.  
+        I focus on crafting clean UI experiences, optimizing performance, and
+        delivering secure, maintainable backend solutions.
       </p>
       <div class="mt-6 flex items-center md:gap-4 gap-2">
         <RouterLink
@@ -38,7 +39,7 @@
           class="py-1.5 flex items-center gap-2.5 px-3 cursor-pointer rounded-sm bg-blue-500 hover:bg-blue-600 text-neutral-100"
         >
           <Users class="w-4" />
-          <p class="uppercase font-medium text-sm">Contact me</p>
+          <p class="uppercase font-medium text-sm">Get in Touch</p>
         </RouterLink>
         <a
           href="/urvish-resume.pdf"

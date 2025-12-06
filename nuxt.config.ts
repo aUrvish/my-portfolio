@@ -2,7 +2,8 @@
 export default defineNuxtConfig({
   app: {
     head: {
-      title: "Urvish Mandaliya",
+      title: 'Urvish Mandaliya - Full-Stack Web Developer',
+      htmlAttrs: { lang: 'en' },
       link: [
         {
           rel: "preconnect",
@@ -26,12 +27,68 @@ export default defineNuxtConfig({
           type: "image/png",
           href: "/favicon.png",
         },
+        { 
+          rel: "canonical", 
+          href: "https://urvish.netlify.app" 
+        },
       ],
       meta: [
         {
           name: "viewport",
           content: "width=device-width, initial-scale=1",
         },
+        { 
+          name: 'author',
+          content: 'Urvish' 
+        },
+        {
+          name: "description",
+          content:
+            "I'm Urvish Mandaliya, a Full-Stack Web Developer with 2.5+ years of experience in Vue.js, Nuxt.js, Laravel, Tailwind CSS, and building dynamic, scalable applications. Explore my projects, skills, experience, and contact info."
+        },
+        {
+          name: "keywords",
+          content:
+            "Urvish Mandaliya, Full Stack Web Developer, Vue.js Developer, Nuxt.js Developer, Laravel Developer, Backend Developer, Frontend Developer, Web Developer, Tailwind CSS Developer, Web Application Developer, Vue Frontend Engineer, Laravel Backend Engineer, JavaScript Developer"
+        },
+        { 
+          property: 'og:type', 
+          content: 'website' 
+        },
+        { 
+          property: "og:title", 
+          content: "Urvish Mandaliya | Full-Stack Web Developer"
+        },
+        {
+          property: "og:description",
+          content:
+            "Passionate Full-Stack Web Developer crafting scalable web apps using Vue.js, Nuxt.js, Laravel, and Tailwind CSS. Explore projects and experience."
+        },
+        { 
+          property: "og:url", 
+          content: "https://urvish.netlify.app/" 
+        },
+        { 
+          property: "og:image", 
+          content: "https:  //urvish.netlify.app/seo-banner.png" 
+        },
+        { 
+          name: "twitter:card", 
+          content: "summary_large_image" 
+        },
+        { 
+          name: "twitter:title", 
+          content: "Urvish Mandaliya | Full-Stack Web Developer" 
+        },
+        {
+          name: "twitter:description",
+          content:
+            "Portfolio of a Full-Stack Developer specializing in Vue.js, Nuxt.js, Tailwind CSS, and Laravel."
+        },
+        { 
+          name: "twitter:image", 
+          content: "https://urvish.netlify.app/seo-banner.png" 
+        }
       ],
       script: [
         {

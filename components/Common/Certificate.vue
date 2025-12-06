@@ -9,13 +9,18 @@
         class="grid lg:grid-cols-3 sm:grid-cols-2 gap-x-6 md:gap-y-8 gap-y-4"
       >
         <a
-          :href="certificate.url"
           v-for="(certificate, index) in certificates"
           :key="index"
+          :href="certificate.url"
+          target="_blank"
+          rel="noopener noreferrer"
+          :title="certificate.name"
+          :aria-label="certificate.name"
         >
           <img
             :src="getCertificateImageUrl(certificate.image)"
             :alt="certificate.name"
+            loading="lazy"
             class="w-full rounded-md dark:border-0 border border-neutral-300 shadow-md"
           />
           <p

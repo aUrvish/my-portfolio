@@ -50,11 +50,11 @@
     </div>
     <div class="w-full">
       <div v-if="tabIndex == 0">
-        <p
+        <h3
           class="lg:text-3xl text-2xl dark:text-neutral-200 text-neutral-700 dark:font-normal font-medium font-instrument tracking-wider capitalize"
         >
-          Online Exam System
-        </p>
+          Ventures - Online Exam System
+        </h3>
         <p
           class="dark:text-neutral-400 text-neutral-600 md:mt-3 mt-2 md:text-base text-sm"
         >
@@ -85,7 +85,7 @@
         <img
           src="@/assets/images/ventures-01.png"
           class="rounded-sm aspect-video object-top transition-all md:mt-8 mt-6 dark:border-0 border shadow-md"
-          alt="ventures-01"
+          alt="Online Exam System built using Vue.js, Nuxt, and Laravel"
         />
         <div class="flex gap-2 items-center flex-wrap mt-4">
           <LazyCommonTechnology
@@ -102,11 +102,11 @@
         </div>
       </div>
       <div v-if="tabIndex == 1">
-        <p
+        <h3
           class="lg:text-3xl text-2xl dark:text-neutral-200 text-neutral-700 dark:font-normal font-medium font-instrument tracking-wider capitalize"
         >
           Ecommerce
-        </p>
+        </h3>
         <p
           class="dark:text-neutral-400 text-neutral-600 md:mt-3 mt-2 md:text-base text-sm"
         >
@@ -142,11 +142,11 @@
         </div>
       </div>
       <div v-if="tabIndex == 2">
-        <p
+        <h3
           class="lg:text-3xl text-2xl dark:text-neutral-200 text-neutral-700 dark:font-normal font-medium font-instrument tracking-wider capitalize"
         >
-          Online food ordering system
-        </p>
+          FoodMarket - Online food ordering system
+        </h3>
         <p
           class="dark:text-neutral-400 text-neutral-600 md:mt-3 mt-2 md:text-base text-sm"
         >

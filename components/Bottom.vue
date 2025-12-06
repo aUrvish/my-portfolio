@@ -4,6 +4,7 @@
       <RouterLink
         :to="{ name: 'index' }"
         class="md:text-xl text-lg outline-none dark:text-white uppercase font-bold"
+        aria-label="Navigate to Home"
       >
         Urvish M.
       </RouterLink>

@@ -13,6 +13,7 @@
           </label>
           <input
             id="name"
+            name="name"
             v-model="name"
             type="text"
             placeholder="Your Name"
@@ -30,6 +31,7 @@
           </label>
           <input
             id="email"
+            name="email"
             v-model="email"
             type="email"
             placeholder="jone@deo.com"
@@ -48,6 +50,7 @@
         </label>
         <textarea
           id="message"
+          name="message"
           v-model="message"
           rows="5"
           placeholder="Hello there, I would like to ask you about..."
@@ -70,6 +73,7 @@
           <p
             class="md:text-base dark:text-neutral-200 text-neutral-800 text-sm tracking-tight flex items-center gap-3"
             v-show="responseBadge.show"
+            role="status"
           >
             <CircleX
               v-if="responseBadge.type == 'error'"

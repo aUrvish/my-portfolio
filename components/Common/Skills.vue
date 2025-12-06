@@ -5,11 +5,11 @@
       caption="Over the years, I have worked with a variety of technologies."
     />
     <div class="md:pl-8 mt-8">
-      <p
+      <h3
         class="uppercase dark:font-normal font-semibold md:text-lg text-base text-neutral-700 dark:text-neutral-300"
       >
         Design tools
-      </p>
+      </h3>
       <div class="flex md:gap-4 gap-2.5 items-center flex-wrap mt-3">
         <LazyCommonTechnology
           v-for="(tool, ind) in designTools"
@@ -17,11 +17,11 @@
           :name="tool"
         />
       </div>
-      <p
+      <h3
         class="mt-7 uppercase dark:font-normal font-semibold md:text-lg text-base text-neutral-700 dark:text-neutral-300"
       >
         Tech Stack
-      </p>
+      </h3>
       <div class="flex md:gap-4 gap-2.5 items-center flex-wrap mt-3">
         <LazyCommonTechnology
           v-for="(tool, ind) in techTools"
@@ -41,11 +41,11 @@
           :name="tool"
         />
       </div>
-      <p
+      <h3
         class="mt-7 uppercase dark:font-normal font-semibold md:text-lg text-base text-neutral-700 dark:text-neutral-300"
       >
         DevOps Stack
-      </p>
+      </h3>
       <div class="flex md:gap-4 gap-2.5 items-center flex-wrap mt-3">
         <LazyCommonTechnology
           v-for="(tool, ind) in devopsTools"
@@ -53,11 +53,11 @@
           :name="tool"
         />
       </div>
-      <p
+      <h3
         class="mt-7 uppercase dark:font-normal font-semibold md:text-lg text-base text-neutral-700 dark:text-neutral-300"
       >
         Productivity & Coding Tools I Use
-      </p>
+      </h3>
       <div class="flex md:gap-4 gap-2 items-center flex-wrap mt-3">
         <LazyCommonTechnology
           v-for="(tool, ind) in productivityTools"
