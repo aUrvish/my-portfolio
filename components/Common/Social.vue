@@ -4,6 +4,9 @@
       class="p-2 border dark:border-neutral-700 border-neutral-200 aspect-square rounded-full dark:bg-neutral-800 bg-neutral-200"
       href="https://www.linkedin.com/in/mandaliyaurvish/"
       target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Visit my LinkedIn profile"
+      title="LinkedIn"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -19,6 +22,9 @@
       class="p-1.5 border dark:border-neutral-700 border-neutral-200 aspect-square rounded-full dark:bg-neutral-800 bg-neutral-200"
       href="https://github.com/aUrvish"
       target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Visit my GitHub profile"
+      title="GitHub"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -34,6 +40,9 @@
       class="p-2 border dark:border-neutral-700 border-neutral-200 aspect-square rounded-full dark:bg-neutral-800 bg-neutral-200"
       href="https://discord.com/users/1403568488152563803"
       target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Connect with me on Discord"
+      title="Discord"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -48,6 +57,8 @@
     <a
       class="p-2 border dark:border-neutral-700 border-neutral-200 aspect-square rounded-full dark:bg-neutral-800 bg-neutral-200"
       href="mailto:mandaliyaurvishj7@gmail.com"
+      aria-label="Send me an email"
+      title="Email me"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"

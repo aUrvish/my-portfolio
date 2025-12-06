@@ -1,13 +1,17 @@
 <template>
   <a
-    target="_blank"
-    :href="selectedTechnology.link"
     v-if="selectedTechnology"
+    :href="selectedTechnology.link"
+    target="_blank"
+    rel="noopener noreferrer"
+    :title="`Visit ${selectedTechnology.title} official website`"
+    :aria-label="`${selectedTechnology.title} – technology used in development`"
     class="flex items-center dark:bg-white/5 md:px-2.5 px-2 border border-neutral-300 dark:border-neutral-700 rounded-sm cursor-pointer"
     :class="size == 'small' ? 'py-1 gap-2.5' : 'py-1 md:py-1.5 md:gap-3 gap-3'"
   >
     <img
       :src="getToolsImageUrl(selectedTechnology.url)"
+      :alt="`${selectedTechnology.title} logo`"
       class="object-contain w-full h-full"
       :class="[
         selectedTechnology.customClass,
@@ -16,7 +20,6 @@
           : selectedTechnology.normalClass ??
             'md:max-w-6 max-w-5 md:max-h-6 max-h-5',
       ]"
-      :alt="selectedTechnology.name"
     />
     <p
       class="dark:text-neutral-300 text-neutral-700 capitalize text-nowrap"
@@ -77,6 +80,7 @@ const technologies = ref([
     title: "JavaScript",
     url: "/assets/images/tools/javascript.png",
     customClass: "rounded-sm",
+    link: "https://ecma-international.org/publications-and-standards/standards/ecma-262/",
   },
   {
     name: "typescript",
@@ -131,11 +135,13 @@ const technologies = ref([
     name: "html",
     title: "HTML",
     url: "/assets/images/tools/html.png",
+    link: "https://www.w3.org/TR/html5/",
   },
   {
     name: "css",
     title: "CSS",
     url: "/assets/images/tools/css.png",
+    link: "https://www.w3.org/TR/css/",
   },
   {
     name: "scss",
@@ -179,6 +185,7 @@ const technologies = ref([
     name: "linux",
     title: "Linux",
     url: "/assets/images/tools/linux.webp",
+    link: "https://www.kernel.org/",
   },
   {
     name: "aws",

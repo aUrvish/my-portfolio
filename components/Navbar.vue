@@ -2,18 +2,29 @@
   <header
     class="md:py-5 py-3 px-4 fixed w-full top-0 z-50 transition-all"
     :class="blurNav"
+    role="banner"
   >
-    <div
+    <nav
       class="max-w-screen-xl mx-auto flex justify-between gap-4 items-center md:pl-8"
+      role="navigation"
+      aria-label="Main Navigation"
     >
       <div class="flex items-center gap-4">
-        <button class="cursor-pointer md:hidden" @click="isOpenLinkMenu = true">
-          <Menu class="dark:text-neutral-100 w-6" />
+        <button
+          class="cursor-pointer md:hidden"
+          @click="isOpenLinkMenu = true"
+          aria-label="Open Mobile Menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <Menu class="dark:text-neutral-100 w-6" aria-hidden="true" />
         </button>
 
         <RouterLink
           :to="{ name: 'index' }"
           class="md:text-xl text-lg outline-none dark:text-white uppercase font-bold"
+          title="Go to Homepage"
+          prefetch
         >
           Urvish M.
         </RouterLink>
@@ -25,6 +36,8 @@
             <RouterLink
               :to="{ name: link.route }"
               class="dark:text-neutral-400 dark:hover:text-neutral-100 px-2.5 py-1.5 dark:hover:bg-white/10 rounded-sm group capitalize text-neutral-700 hover:text-black hover:bg-black/10"
+              :title="`Go to ${link.name}`"
+              prefetch
             >
               {{ link.name }}</RouterLink
             >
@@ -37,23 +50,29 @@
               class="py-1 md:px-2.5 px-2 cursor-pointer rounded-sm hover:bg-black/10 dark:hover:bg-white/10"
               @click="isShowModeMenu = !isShowModeMenu"
               v-click-outside="() => (isShowModeMenu = false)"
+              aria-label="Theme switcher"
+              aria-haspopup="true"
+              :aria-expanded="isShowModeMenu"
             >
               <!-- <Moon class="dark:text-neutral-100 w-5" /> -->
               <component
                 :is="activeModeObj.icon"
                 class="dark:text-neutral-100 w-5"
+                aria-hidden="true"
               />
             </button>
             <transition name="slide-up">
               <ul
                 class="absolute top-[125%] flex flex-col gap-1 right-0 rounded-sm border dark:border-neutral-800 dark:bg-neutral-900 w-40 p-1.5 bg-white"
                 v-show="isShowModeMenu"
+                role="menu"
               >
                 <li
                   class="flex items-center gap-3 px-2 cursor-pointer dark:hover:bg-white/10 py-1 rounded-sm group"
                   v-for="(mode, index) in themeMode"
                   :key="index"
                   @click="themeStore.setTheme(mode.name)"
+                  role="menuitem"
                   :class="
                     activeTheme == mode.name
                       ? 'dark:bg-white/10 bg-black/10'
@@ -63,6 +82,7 @@
                   <component
                     :is="mode.icon"
                     class="dark:group-hover:text-neutral-100 w-5"
+                    aria-hidden="true"
                     :class="
                       activeTheme == mode.name
                         ? 'dark:text-neutral-100'
@@ -93,12 +113,15 @@
           </a>
         </div>
       </div>
-    </div>
+    </nav>
   </header>
   <transition name="fade">
     <div
       class="overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 flex flex-col justify-center items-center w-full md:inset-0 md:h-[calc(100%-1rem)] h-full max-h-full backdrop-blur-md md:hidden"
       v-show="isOpenLinkMenu"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Mobile Navigation Menu"
     >
       <ul
         class="p-3 w-full flex flex-col gap-2 border dark:border-neutral-800 rounded-lg max-w-80 max-h-full dark:bg-black bg-white/90 links shadow-md"
@@ -107,15 +130,18 @@
           <RouterLink
             :to="{ name: link.route }"
             class="dark:text-neutral-400 dark:hover:text-neutral-100 px-3 py-2.5 dark:hover:bg-white/10 rounded-md group capitalize text-neutral-700 hover:text-black hover:bg-black/10 w-full flex items-center justify-between"
+            :title="`Go to ${link.name}`"
+            prefetch
           >
             <p>{{ link.name }}</p>
-            <MoveUpRight class="w-4" />
+            <MoveUpRight class="w-4" aria-hidden="true" />
           </RouterLink>
         </li>
       </ul>
       <button
         class="absolute bottom-16 p-4 bg-white/90 dark:bg-black/90 rounded-full border shadow-lg dark:border-neutral-800"
         @click="isOpenLinkMenu = false"
+        aria-label="Close menu"
       >
         <X class="text-neutral-700 dark:text-neutral-400" />
       </button>

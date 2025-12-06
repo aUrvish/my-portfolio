@@ -8,16 +8,16 @@
       class="md:pl-8 mt-8 flex flex-col lg:flex-row justify-between md:gap-8 gap-6 items-start"
     >
       <div class="w-full rounded-sm dark:border-neutral-700 max-w-screen-lg">
-        <p
+        <h3
           class="text-xl font-medium text-neutral-700 dark:text-neutral-200 capitalize"
         >
           Full stack web developer
-        </p>
-        <p
+        </h3>
+        <h4
           class="md:text-lg text-base font-instrument dark:text-neutral-400 text-neutral-600"
         >
           At Clavier Technologies - Full-time
-        </p>
+        </h4>
         <p
           class="mt-2 font-instrument border rounded-sm w-fit py-0.5 px-2.5 text-sm dark:border-neutral-700 dark:text-neutral-400 border-neutral-400 text-neutral-500"
         >
