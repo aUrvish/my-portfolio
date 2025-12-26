@@ -27,7 +27,7 @@
       <p
         class="md:mt-8 mt-5 dark:text-neutral-300 dark:font-light font-normal text-neutral-700 text-base max-w-screen-md md:tracking-widest tracking-wider font-instrument"
       >
-        I’m a dedicated Full-Stack Web Developer with 2+ years of experience
+        I’m a dedicated Full-Stack Web Developer with {{ experienceInyear() }} years of experience
         building fast, responsive, and scalable web applications using
         <strong>Vue.js, Nuxt.js, Laravel,</strong> and modern tooling.  
         I focus on crafting clean UI experiences, optimizing performance, and
@@ -69,4 +69,13 @@
 
 <script setup>
 import Feature from "../Common/Feature.vue";
+
+const experienceInyear = () => {
+  const startDate = new Date("2023-06-01");
+  const currentDate = new Date();
+
+  const diffTime = currentDate - startDate;
+  const diffYears = diffTime / (1000 * 60 * 60 * 24 * 365.25); // Include leap years
+  return Math.round(diffYears);
+};
 </script>

@@ -90,6 +90,6 @@ const experienceInyear = () => {
 
   const diffTime = currentDate - startDate;
   const diffYears = diffTime / (1000 * 60 * 60 * 24 * 365.25); // Include leap years
-  return diffYears.toFixed(1);
+  return Math.round(diffYears);
 };
 </script>
