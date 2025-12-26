@@ -62,6 +62,39 @@
               ORM.
             </p>
           </div>
+          <div class="flex gap-3 items-start">
+            <Sparkle
+              :stroke-width="3"
+              class="max-w-4 w-full inline-block text-blue-500"
+            />
+            <p
+              class="md:text-base text-sm text-neutral-500 dark:text-neutral-400 md:tracking-wider tracking-wide"
+            >
+              Managed multi-tenant environments, migrating live client instances from AWS EC2 to DigitalOcean without affecting uptime or user experience.
+            </p>
+          </div>
+          <div class="flex gap-3 items-start">
+            <Sparkle
+              :stroke-width="3"
+              class="max-w-4 w-full inline-block text-blue-500"
+            />
+            <p
+              class="md:text-base text-sm text-neutral-500 dark:text-neutral-400 md:tracking-wider tracking-wide"
+            >
+              Automated server provisioning and maintenance using Ansible, configuring MySQL, Apache, and release management tools.
+            </p>
+          </div>
+          <div class="flex gap-3 items-start">
+            <Sparkle
+              :stroke-width="3"
+              class="max-w-4 w-full inline-block text-blue-500"
+            />
+            <p
+              class="md:text-base text-sm text-neutral-500 dark:text-neutral-400 md:tracking-wider tracking-wide"
+            >
+              Delivered critical backend functionality including reconcile processes, custom billing (Chargify), OAuth refactoring, automated backups (Restic + S3) and Laravel Artisan commands.
+            </p>
+          </div>
         </div>
       </div>
     </div>
